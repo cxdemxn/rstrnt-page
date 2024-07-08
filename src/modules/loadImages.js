@@ -2,10 +2,11 @@ import {loadImagesToContainer, getAllImages} from './functions';
 
 const allImagesContainerSelector = {
     "./logo.png": ".logo",
-    "./home-banner.png": ".home-banner-image",
-    "./hamburger.png": ".home-body-section-2",
+    "./home-section-1.png": ".home-section-1-image",
+    "./hamburger.png": ".home-section-2-image",
     "./home-section-3.png" : ".home-section-3-image",
     "./home-section-4.png" : ".home-section-4-image",
+    "./logo-orange.png": ".footer-image",
 }
 
 export default function loadImages() {

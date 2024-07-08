@@ -1,0 +1,223 @@
+/* section 1 */
+.home-section-1 {
+    background-color: var(--site-color);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    color: white;
+}
+
+.home-section-1-text, .home-section-1-image{
+    /* border: 1px solid; */
+}
+
+.home-section-1 .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+}
+
+.home-section-1 h1 {
+    font-size: var(--font-size-1);
+    line-height: 3.5rem;
+    margin-bottom: 1.4rem;
+    text-align: left;
+}
+
+.home-section-1 button, .home-section-5 button {
+    margin-top: 1rem;
+    background-color: white;
+    border: none;
+    padding: 1.3rem 2rem;
+    border-radius: 2rem;
+    color: var(--site-color);
+    font-family: 'courier_primeregular';
+    font-size: 1.2rem;
+}
+
+.home-section-1-image {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 1.5rem; */
+}
+
+.home-section-1 img {
+    width: clamp(23rem, 29vw, 29vw);
+}
+
+
+
+
+/* section 2 */
+
+.home-section-2-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.home-section-2-image img{
+    width: 4rem;
+}
+
+.home-section-2 {
+    margin-top: 9rem;
+    margin-bottom: 10rem;
+}
+
+.home-section-2 h1 {
+    font-size: calc(1.7vw + 1.5rem);
+    text-align: center;
+    margin: 2rem 0;
+}
+
+
+/* section 3 */
+.home-section-3 {
+    background-color: var(--home-section-3-color);
+    padding-top: 8rem;
+    padding-bottom: 7rem;
+}
+
+.section-3-grid {
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.home-section-3 h3 {
+    color: var(--site-color);
+    font-size: var(--font-size-3);
+    margin-bottom: calc(1.5vw + 1rem);
+}
+
+.home-section-3 h2 {
+    font-size: calc(1.9vw + 1.9rem);
+}
+
+.home-section-3 p {
+    margin: 1.5rem 0;
+}
+
+.home-section-3 button {
+    /* margin-top: 1rem; */
+    background-color: var(--home-section-3-color);
+    border: 2px solid var(--site-color);
+    padding: .7rem 1.3rem;
+    border-radius: 2rem;
+    color: var(--site-color);
+    font-family: 'courier_primeregular';
+    font-size: 1rem;
+}
+
+.home-section-3-image {
+    display: flex;
+    justify-content: center;
+}
+
+.home-section-3 img {
+    width: clamp(19rem, 29vw, 19vw);
+    border-radius: 2rem;
+}
+
+
+/* section 4 */
+
+.home-section-4 {
+
+}
+
+.home-section-4-grid {
+    /* background-color: blue; */
+    display: grid;
+    /* grid-template-areas: 
+        "one three four"
+        "two three five"
+        ; */
+    grid-template-areas: 
+        "one"
+        "two"
+        "three"
+        "four"
+        "five"
+        ;
+    /* row-gap: 1rem; */
+    /* row-gap: 5rem; */
+    /* column-gap: 1em; */
+    /* grid-template-columns: 3fr 1fr 1fr ; */
+}
+
+.home-section-4-image {
+    display: flex;
+    justify-content: center;
+}
+
+.home-section-4-image img{
+    width: clamp(24rem, 29vw, 25vw);
+    /* border: 1px solid; */
+    margin: 2rem 0;
+}
+
+.home-section-4-grid-text-item {
+    /* border: 1px solid; */
+
+}
+
+.home-section-4-grid-text-item h3 {
+    color: var(--site-color);
+    font-size: calc(1.5vw + 1.5rem);
+    margin-bottom: 1.5rem;
+}
+
+.home-section-4-grid-item-1 {
+    grid-area: one;
+    margin-top: 5rem;
+}
+.home-section-4-grid-item-2 {
+    grid-area: two;
+    margin-top: 5rem;
+}
+.home-section-4-grid-item-3 {
+    grid-area: three;
+}
+.home-section-4-grid-item-4 {
+    grid-area: four;
+    margin-bottom: 5rem;
+}
+.home-section-4-grid-item-5 {
+    grid-area: five;
+    margin-bottom: 5rem;
+}
+
+.home-section-5 {
+    background: url(../assets/imgs/home-section-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment:fixed; */
+    background-position: center;
+    /* background-color: #181313; */
+    color: white;
+}
+
+.home-section-5 .container {
+    padding: 13rem 0;
+    display: grid;
+}
+
+.home-section-5 h1 {
+    font-size: var(--font-size-1);
+    text-align: center;
+}
+
+.home-section-5 p {
+    font-size: var(--font-size-3);
+    text-align: center;
+}
+
+.home-section-5 button {
+    background: none;
+    border: 1px solid var(--site-color);
+    justify-self: center;
+    margin-top: 2rem;
+    color: white;
+}
