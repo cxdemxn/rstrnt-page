@@ -90,6 +90,18 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
+    /* align-items: center; */
+}
+
+.home-section-3-grid-item {
+    display: flex;
+    align-items: center;
+}
+
+.home-section-3-grid-item-wrap
+{
+    /* border: 1px solid; */
+    height: min-content;
 }
 
 .home-section-3 h3 {
@@ -124,6 +136,7 @@
 
 .home-section-3 img {
     width: clamp(19rem, 29vw, 19vw);
+    width: clamp(18rem, 35vw + 32vh, 80%);
     border-radius: 2rem;
 }
 
