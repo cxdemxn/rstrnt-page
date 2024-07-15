@@ -48,7 +48,40 @@ header .container {
 }
 
 nav {
+    display: flex;
     display: none;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+nav > button {
+    border: none;
+    background: none;
+    color: white;
+    font-family: 'soralight';
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav button:nth-of-type(5) {
+    background-color: #fea86a;
+    border-radius: 2rem;
+    padding: 1rem 1.2rem;
+    color: var(--site-color)
+}
+
+@media (min-width: 992px) {
+    nav {
+        display: flex;
+    }
+
+    .menu-button {
+        display: none;
+    }
+}
+
+nav button:last-of-type {
+    stroke: #fea86a;
 }
 
 .logo img {
@@ -58,6 +91,7 @@ nav {
 .menu-button {
     border: none;
     background: none;
+    /* display: none; */
 }
 
 .header-menu {
