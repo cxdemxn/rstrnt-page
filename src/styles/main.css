@@ -1,7 +1,7 @@
 /* section 1 */
 .home-section-1 {
     background-color: var(--site-color);
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 5rem;
     color: white;
 }
@@ -19,7 +19,8 @@
 
 .home-section-1 h1 {
     font-size: var(--font-size-1);
-    /* line-height: 3.5rem; */
+    line-height: 4.8rem; /*for pc size*/
+    line-height: 3.8rem;
     margin-bottom: 1.4rem;
     margin-top: 2.8rem;
     /* text-align: left; */
@@ -43,7 +44,11 @@
 }
 
 .home-section-1 img {
-    width: clamp(23rem, 29vw, 29vw);
+    width: clamp(22rem, 29vw, 29vw);
+    width: clamp(22rem, 35vw + 32vh, 99%);
+    /* width: calc(20vw + 32vh);
+    width: calc(35vw + 32vh); */
+    /* width: 99%; */
 }
 
 
@@ -155,7 +160,7 @@
 }
 
 .home-section-4-image img{
-    width: clamp(24rem, 29vw, 25vw);
+    width:  clamp(3rem, 6vw + 0.3vh, 17rem);
     /* border: 1px solid; */
     margin: 2rem 0;
 }
