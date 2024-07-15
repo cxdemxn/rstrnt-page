@@ -71,11 +71,11 @@ nav {
 
 /* footer */
 footer {
-    margin: 1.3rem 0 6rem;
+    margin: 5rem 0 2rem;
 }
 
 footer .container > * {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .footer-image {
