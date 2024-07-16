@@ -30,3 +30,28 @@ export function getAllImages() {
 
     return images;
 }
+
+export function closeOverlay() {
+    document.querySelector('.overlay').style.width = '0';
+    document.querySelector('#menuOpen').style.display = 'block';
+    document.querySelector('#menuClose').style.display = 'none';
+    document.body.classList.remove('no-scroll');
+
+}
+
+function openOverlay() {
+    document.querySelector('.overlay').style.width = '100%';
+    document.querySelector('#menuOpen').style.display = 'none';
+    document.querySelector('#menuClose').style.display = 'block';
+    document.body.classList.add('no-scroll');
+
+}
+
+export function toggleOverlay()
+{
+    (document.querySelector('.overlay').style.width === '100%') 
+    ? 
+        closeOverlay()
+    :
+        openOverlay();      
+}

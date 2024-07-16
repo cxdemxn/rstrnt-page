@@ -137,6 +137,13 @@ ul.footer-nav {
     justify-content: center;
 }
 
+ul.footer-nav li button{
+    background: none;
+    border: none;
+    font-family: 'soralight';
+    font-size: 1rem;
+}
+
 .footer-contact {
     display: flex;
     justify-content: center;
