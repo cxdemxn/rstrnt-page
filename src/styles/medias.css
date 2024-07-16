@@ -1,0 +1,15 @@
+@media (min-width: 992px) {
+    nav {
+        display: flex;
+    }
+
+    .menu-button {
+        display: none;
+    }
+    
+    .overlay {
+        /* display: none; */
+        width: 0;
+        /* background-color: red; */
+    }
+}

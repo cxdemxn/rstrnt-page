@@ -19,6 +19,7 @@
     font-family: 'soralight';
     --site-color: #dd4823;
     --site-color: #e65728;
+    --site-secondary-color: #fea86a;
     /* --home-section-3-color: antiquewhite; */
     --home-section-3-color: #fff6f0;
     --font-size-1: clamp(3.4rem, 4vw + 1.3vw, 4.5rem);
@@ -37,6 +38,10 @@
 
 header {
     background-color: var(--site-color);
+}
+
+body {
+    overflow: hidden;
 }
 
 header .container {
@@ -64,24 +69,15 @@ nav > button {
 }
 
 nav button:nth-of-type(5) {
-    background-color: #fea86a;
+    background-color: var(--site-secondary-color);
     border-radius: 2rem;
     padding: 1rem 1.2rem;
     color: var(--site-color)
 }
 
-@media (min-width: 992px) {
-    nav {
-        display: flex;
-    }
-
-    .menu-button {
-        display: none;
-    }
-}
 
 nav button:last-of-type {
-    stroke: #fea86a;
+    stroke: var(--site-secondary-color);
 }
 
 .logo img {
