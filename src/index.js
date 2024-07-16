@@ -4,11 +4,14 @@ import './styles/overlay.css';
 import './styles/medias.css';
 import { closeOverlay, toggleOverlay } from './modules/functions'
 import loadImages, { loadHomeImages } from './modules/loadImages';
+import tabToPage from './utils/tabToPage'
 import home from './modules/home';
-import about from './modules/about';
-import gallery from './modules/gallery';
+import overlay from './modules/overlay';
 
 const container = document.querySelector('.content-container');
+const overlayWrapper = document.createElement('div');
+    overlayWrapper.innerHTML = overlay();
+    document.body.appendChild(overlayWrapper);
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -31,28 +34,18 @@ menuBtn.addEventListener('click', () => {
 
 homeNavBtn.forEach(btn => {
     btn.addEventListener('click', () => {
-        if (btn.dataset.info === 'menu') {
-            closeOverlay();
-        }
-        container.innerHTML = home();
-        loadHomeImages();
+        tabToPage(btn, 'home');
     });
 });
 
 aboutNavBtn.forEach(btn => {
     btn.addEventListener('click', () => {
-        if (btn.dataset.info === 'menu') {
-            closeOverlay();
-        }
-        container.innerHTML = about();
+        tabToPage(btn, 'about');
     });
 });
 
 galleryNavBtn.forEach(btn => {
     btn.addEventListener('click', () => {
-        if (btn.dataset.info === 'menu') {
-            closeOverlay();
-        }
-        container.innerHTML = about();
+        tabToPage(btn, 'gallery');
     });
 });
