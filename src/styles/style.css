@@ -40,7 +40,7 @@ header {
     background-color: var(--site-color);
 }
 
-body {
+.no-scroll {
     overflow: hidden;
 }
 
@@ -94,6 +94,10 @@ nav button:last-of-type {
     font-size: 30px;
     height: 40px;
     stroke: #fea86a;
+}
+
+#menuClose {
+    display: none;
 }
 
 
