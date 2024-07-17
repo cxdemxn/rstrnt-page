@@ -216,7 +216,7 @@
     background: url(../assets/imgs/home-section-5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment:fixed; */
+    background-attachment:fixed;
     background-position: center;
     /* background-color: #181313; */
     color: white;
