@@ -135,6 +135,8 @@
 }
 
 .home-section-3 img {
+    /* width: 28rem; */
+    width: clamp(18rem, 35vw + 32vh, 80%);
     width: clamp(18rem, 35vw + 32vh, 80%);
     border-radius: 2rem;
 }
